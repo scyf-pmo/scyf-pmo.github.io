@@ -4,8 +4,7 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
-  schedule:
-    - cron: '17 * * * *'
+  # 定时更新已暂停；保留手动运行和 main 分支推送后的部署。
 
 permissions:
   contents: read
